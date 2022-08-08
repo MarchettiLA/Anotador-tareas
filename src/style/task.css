@@ -1,0 +1,50 @@
+.task__item__flex-container{
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: .4em;
+    box-shadow: 2px 5px 6px black;
+    color: white;
+    display: flex;
+    height: 3em;
+    justify-content: space-between;
+    margin: .8em 0;
+    padding: 0 4%;
+}
+
+.task__item__flex-container input{
+    cursor: pointer;
+    transform: scale(1.5);
+    width: 1.5em;
+}
+
+
+.task__item__flex-container label {
+    cursor: pointer;
+    display: flex;
+    width: 80%;
+    position: relative;
+}
+
+.done label{
+    color: rgb(80, 80, 80);
+}
+
+.done label::after{
+    background-color: #4d90f5;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    width: 100%;
+}
+
+.done
+
+.task__item__flex-container i:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(1.2);
+}

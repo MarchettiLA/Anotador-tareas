@@ -1,0 +1,36 @@
+@media (min-width: 768px){
+    /* HEADER */
+
+    .flex-item:last-child{
+        width: 40%;
+    }
+
+    .flex-item i{
+        display: none;
+    }
+    
+
+    .flex-item__nav{
+        background: none;
+        display: flex;
+        justify-content: end;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav__list{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav__list .list__item{
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+    }
+}
