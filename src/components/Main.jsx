@@ -4,6 +4,7 @@ import "../style/main.css";
 import AddButton from "./AddButton.jsx"
 import { useEffect, useState } from "react";
 
+
 function Main() {
     let taskName = ""
     let nroTask = 0;
@@ -65,8 +66,17 @@ function Main() {
 
 // LOCAL STORAGE
 
+const cargarTareasAnteriores = () =>{
+    const data = JSON.parse(localStorage.getItem("task"));
+    for(let element of data){
+    setTasksNames([...tasksNames, element.taskName]) 
+    setTasks([...tasks,<Task/>]) 
+    }
+    //setTasksNames([...tasksNames, data.taskName]) 
+    //setTasks([...tasks,<Task/>]) 
 
-
+}
+ cargarTareasAnteriores();
 
 ////////////////////////////////////////////////////////////////////
 
